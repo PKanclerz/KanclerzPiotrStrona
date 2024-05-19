@@ -1,0 +1,295 @@
+
+
+body{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    max-height: 100%;
+    max-width: 100%;
+}
+html{
+    height: 100%;
+    width: 100%;
+}
+header{
+    background-color: rgb(255, 255, 255);
+    box-shadow:2px 4px 16px #000;
+ height: 5rem;
+    position: sticky;
+    top:0%;
+    left:0%;
+    z-index: 100;
+}
+body *{
+    font-size: 1rem;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+}
+nav>section{
+    display: flex;
+}
+nav>section>a, .dropdownElements>div>a {
+    margin: 1rem;
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown{
+    display: none;
+}
+
+.dropdownElements{
+        display: none;
+        position: absolute;
+
+    }
+.dropdownElements>div{
+    display: flex;
+    width: 9rem;
+    
+    flex-direction:column;
+    justify-content: center;
+    background-color: white;
+    
+}
+.dropdownElements>div>*{
+    margin: 1rem;
+}
+
+@media (max-width:3000px){
+    .clothe{
+        width:18%
+    }
+    .pc{
+        display: flex;
+    }
+    .dropdown{
+        display: none;
+    }
+    
+}
+@media (max-height:2000px){
+    .clothe{
+        height: 25%;
+    }
+    .clothe>p{
+        font-size: 3rem;  
+    }
+}
+@media (max-width:1200px){
+    .clothe{
+        width:40%
+    }
+    
+}
+@media (max-height:1400px){
+    .clothe{
+        height: 18%;
+    }
+    .clothe>p{
+        font-size: 2rem;  
+    }
+}
+
+@media (max-width:800px){
+   .clothe{
+    width: 70%;
+   }
+
+
+    .pc{
+        display: none;
+    }
+    .dropdown{
+        display: block;
+    }
+    
+}
+
+@media (max-height:1000px){
+    .clothe{
+        height: 15%;
+    }
+    .clothe>p{
+        font-size: 1rem;  
+    }
+}
+
+
+
+.right{
+    position: absolute;
+    right: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right>input {
+    width: 8rem;
+     height: 1.5rem;
+}
+.AccImg{
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    margin-left: 1rem;
+
+}
+
+
+.clothes{
+    display: flex;
+    margin: 2rem;
+    flex-wrap: wrap;
+   justify-content: center;
+}
+
+
+
+
+.clothe{
+
+   
+    border: 1px solid black;
+    margin: 2rem;
+   display: flex;
+   flex-direction: column;
+   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+   
+}
+
+.clothe>p{
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    
+}
+.clothe>a{
+    margin-left: 1rem;
+    color: #000;
+    
+}
+.clothe>img{
+    width: 100%;
+    height: 60%;
+    
+
+}
+.buttonsInCard{
+    margin-top: 1rem;
+   display: flex;
+   justify-content:space-around ;
+}
+.buttonsInCard>*{
+    width: 40%;
+    height: 3rem;
+    margin-bottom: 1rem;
+   border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    
+}
+
+.more{
+    background-color: rgb(255, 255, 255);
+    display: block;
+    border:1px solid black;
+    color: rgb(0, 0, 0);
+}
+.more:hover{
+        background-color: rgb(255, 255, 255);
+    color: red;
+    border:1px solid red;
+    
+}
+
+
+
+
+.slider{
+   display: flex;
+   justify-content: center;
+    width: 100%;
+    height: fit-content;
+    margin-top: 1rem;
+}
+.slider{
+    margin-bottom: 4rem;
+}
+.slideshow-container{
+    
+    display: flex;
+    justify-content: center;
+}
+
+main>main{
+    margin-top: 2rem;
+    height: fit-content;
+    width: 100%;
+}
+footer{
+    background-color: #000;
+    height: 6rem;
+    margin-top: 5rem;
+    width: 100%;
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+footer>p{
+ 
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    margin: 2rem;
+}
+.title{
+    
+   text-align: center;
+    font-size: 2rem;
+    margin-top: 2rem;
+
+
+}
+
+@media (max-width:1400px) {
+    footer{
+        position:relative;
+        
+    }
+}
+
+#photo1,#photo2,#photo3{
+    /* height: 51rem; */
+    display: flex;
+    flex-basis: 50%;
+}
+@media (max-width:800px){
+
+        main{
+            width: 100%;
+        }
+        .clothes>article>p{
+            font-size: 0.6rem;
+        }
+        .clothes>article>div>button{
+            font-size: 0.6rem;
+        }
+        #photo1,#photo2,#photo3{
+            /* height: 51rem; */
+            display: flex;
+            flex-basis: 100%;
+        }
+}
+
+
+
+
+
+
+

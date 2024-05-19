@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=Q, initial-scale=1.0">
+    <title>Koszyk</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <script src="js/main.js" defer></script>
+    <script src="js/imgToAccSettings.js" defer></script>
+    <script src="js/popOut.js" defer></script>
+    <script src="js/closeBtn.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="dropdown">
+              <img src="https://www.svgrepo.com/show/509382/menu.svg" class="dropbtn" alt="zdjecie" style="border-radius: 10%;width: 3rem; height: 3rem;">
+              <div class="dropdownElements">
+                <div>
+                <a href="index.html" >Home</a>
+                <a href="woman.html">Kobiety</a>
+               <a href="man.html">Meszczyżni</a>
+               <a href="kontakt.html">Napisz do nas</a>
+               <a href="cart.html">Koszyk</a>
+              </div>
+              </div>
+            
+              </div>
+            </div>
+          <section class="pc">
+            <a href="index.html">Home</a>
+                <a href="woman.html">Kobiety</a>
+               <a href="man.html">Meszczyżni</a>
+               <a href="kontakt.html">Napisz do nas</a>
+               <a href="cart.html">Koszyk</a>
+          </section>
+            <section class="right">
+              <input type="text" placeholder="Znadź" >
+              <img src="https://i1.sndcdn.com/artworks-TrAtlJS2kLSoMnkD-xExhyg-t500x500.jpg" alt="zdjecie" class="AccImg">
+            </section>
+        </nav>
+    </header>
+    <main>
+        <section class="title">
+            <h2>Koszyk</h2>
+        </section>
+        <article class="cart">
+            <table>
+            <tr>
+                <th>zdj</th>
+                <th class="name">nazwa</th>
+                <th class="size">rozmiar</th>
+                <th>cena</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td><img src="css/zdj/shoes.png" alt="zdjecie" class="zdj"></td>
+                <td class="name">L.G.B./LUNA-18</td>
+                <td class="size" >43</td>
+                <td>46831,71zł</td>
+                <td class="delete">usuń</td>
+            </tr>
+            <tr>
+                <td><img src="css/zdj/hoodie.png" alt="zdjecie" class="zdj"></td>
+                <td class="name">>L.G.B./BOXER/PK/M</td>
+                <td class="size">M</td>
+                <td>16811,38zł</td>
+                <td class="delete">usuń</td>
+            </tr>
+        </table>
+        </article>
+        <article class="btns">
+            <button class="buyClothe">Kup</button>
+        </article>
+
+    </main>
+
+
+    <section class="popOut">
+        <img src="css/zdj/close.png" alt="zdjecie" class="closeBtn">
+        <div>
+        <h2>Dane</h2>
+        <form action="#" method="post">
+            <label for="email">Email: <input type="email" name="email" id="email" required></label>
+            <label for="adres">Adres <input type="text" name="adres" id="adres" required></label>
+            <label for="kodPocztowy">Kod pocztowy <input type="text" name="kodPocztowy" id="kodPocztowy"  maxlength="6"pattern="\d{2}-\d{3}" title="Zły kod pocztowy" required></label>
+            <label for="numPhone">nr tel <input type="text" name="numPhone" id="numPhone"  maxlength="11" pattern="\d{11}" title="Zły numer telefonu" required></label>
+            <div class="btns">
+            <button type="submit" class="finalBuy">Zakup</button>
+        </div>
+            
+        </form>
+    </div>
+
+    </section>
+
+
+    <footer>
+        <p>ME</p>
+      </footer>
+
+
+</body>
+</html>

@@ -1,0 +1,266 @@
+
+
+main{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: fit-content;
+}
+.title{
+   
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.title>h2{
+    font-size: 3rem;
+}
+
+
+.zdj{
+    width: 5rem;
+    height: 5rem;
+
+}
+table{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th{
+    padding: 3rem;
+    border: 1px solid black;
+}
+td{
+    padding: 3rem;
+    border: 1px solid black;
+}
+.name{
+    padding-right: 6rem;
+    padding-left: 6rem;
+}
+.delete{
+    color: red;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 1.3rem;
+}
+
+.buyClothe{
+    background-color: black;
+    color: white;
+    margin-bottom: 0.4rem;
+    width: 30%;
+    height: 3rem;
+    margin-bottom: 1rem;
+   border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+
+}
+.buyClothe:hover{
+    background-color: rgb(255, 255, 255);
+    color:rgb(0, 200,0);
+    border: 1px solid rgb(0, 200, 0);
+}
+.btns{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    width: 52.3%;
+}
+.popOut{
+    display: none;
+    width: 40rem;
+    
+    position: fixed;
+    top: 30%;
+    left:30%;
+    background-color: rgb(255, 255, 255);
+       -webkit-box-shadow: 7px 24px 43px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 7px 24px 43px 0px rgba(0, 0, 0, 1);
+    box-shadow: 7px 24px 43px 0px rgba(0, 0, 0, 1);
+}
+.popOut>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ 
+}
+.popOut>div>form{
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 2rem;
+}
+.popOut>div>h2{
+    margin-top: 3rem;
+   font-size: 2rem;
+}
+.popOut>div>form>label{
+    width: 50%;
+    margin-bottom: 2rem;
+}
+.popOut>div>form>input{
+    width: 100%;
+    
+}
+.finalBuy{
+    margin-bottom: 3rem;
+}
+.closeBtn{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 60%;
+}
+
+
+
+.finalBuy{
+    background-color: black;
+    color: white;
+    width: 6rem;
+    height: 3rem;
+    margin-bottom: 1rem;
+   border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    
+}
+.finalBuy:hover{
+    background-color: rgb(255, 255, 255);
+    color:rgb(0, 200,0);
+    border: 1px solid rgb(0, 200, 0);
+}
+
+footer{
+
+     
+    position:absolute;
+    bottom: 0%;
+}
+
+
+@media (max-width:1300px) {
+    footer{
+        position:relative;
+        
+    }
+}
+@media (max-width:920px) {
+     table *{
+        font-size: 1rem;
+    }
+    .zdj{
+        width: 3rem;
+        height: 3rem;
+    
+    }
+    th{
+        padding: 1rem;
+    }
+    td{
+        padding: 1rem;
+    }
+    .size{
+        padding: 0.5;
+    }
+    .name{
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+    .delete{
+        color: red;
+        text-decoration: underline;
+        cursor: pointer;
+        font-size: 1.2rem;
+    }
+}
+@media (max-width:800px){
+    table *{
+        font-size: 0.8rem;
+    }
+    .zdj{
+        width: 1rem;
+        height: 1rem;
+    
+    }
+    th{
+        padding: 0.5rem;
+    }
+    td{
+        padding: 0.5rem;
+    }
+    .size{
+        padding: 0;
+    }
+    .name{
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+    }
+    .delete{
+        color: red;
+        text-decoration: underline;
+        cursor: pointer;
+        font-size: 0.9rem;
+    }
+    .popOut{
+        display: none;
+        width:80%;
+        
+        position: fixed;
+        top: 20%;
+        left:10%;
+   
+    }
+    
+
+.popOut>div>form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+     margin-left: 0.5rem;
+     align-items: flex-start;
+
+}
+.popOut>div{
+    display: flex;
+    flex-direction: column;
+   align-items: flex-start;
+    justify-content:flex-start;
+ margin-left: 0.4rem;
+}
+.popOut>div>h2{
+    margin-top: 1rem;
+   font-size: 1.3rem;
+   text-align: center;
+}
+.popOut>div>form>label{
+    width: 2rem;
+    margin-bottom: 0.5rem;
+}
+.popOut>div>form>input{
+    width: 2rem;
+}
+    .btns{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    footer{
+        position:absolute;
+        bottom: 0%;
+    }
+}
+
+@media (min-height:1050px){
+
+    footer{
+        position: absolute;
+        bottom: 0%;
+    }
+}   

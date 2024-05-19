@@ -1,0 +1,157 @@
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+
+}
+
+h2{
+    margin: 3rem;
+    font-size: 2rem;
+}
+.card{
+    background-color: rgb(255, 255, 255);
+    
+   
+    width: 50rem;
+    height: 30rem;
+    -webkit-box-shadow: 7px 24px 43px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 7px 24px 43px 0px rgba(0, 0, 0, 1);
+    box-shadow: 7px 24px 43px 0px rgba(0, 0, 0, 1);
+    margin-bottom: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card>form{
+  
+ 
+    width: 60%;
+    margin-top: 3rem;
+    margin-right: 2rem;
+    
+}
+.card>form>label{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+
+   
+
+}
+.dane{
+    width: 35%;
+    margin-top: 3rem;
+}
+.buttons{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.buttons>*{
+    margin:2rem;
+    width: 5rem;
+    height: 4rem;
+}
+.reset{
+    background-color: rgb(255, 255, 255);
+    display: block;
+    border:1px solid black;
+    color: rgb(0, 0, 0);
+}
+.reset:hover{
+        background-color: rgb(255, 255, 255);
+    color: red;
+    border:1px solid red;
+    
+}
+.send{
+    
+    background-color: rgb(0, 0, 0);
+    display: block;
+    border:1px solid black;
+    color: rgb(255, 255, 255);
+    
+    
+
+}
+.send:hover{
+        background-color: rgb(255, 255, 255);
+    color: rgb(0, 255, 0);
+    border:1px solid rgb(0, 255, 0);
+    
+}
+footer{
+
+     
+    position:absolute;
+    bottom: 0%;
+}
+
+@media (max-width:1300px) {
+    footer{
+        position:relative;
+        
+    }
+}
+
+@media (max-width:800px){
+    
+    
+    .card{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .dane{
+        margin-top: 0rem;
+        margin-bottom: 2rem;
+    }
+    
+    footer{
+        position: relative;
+    }
+    .card>form>label{
+       
+        margin-bottom: 1rem;
+    
+    }
+    .buttons{
+        display: flex;
+        justify-content:flex-end;
+        width: 20rem;
+    }
+    .buttons>*{
+        margin:1rem;
+        width: 6rem;
+        height: 4rem;
+    }
+    .card>form{
+  
+ 
+        width: 90%;
+        margin-top: 3rem;
+        margin-right: 2rem;
+        
+    }
+    
+}   
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,129 @@
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.card{
+    background-color: rgb(255, 255, 255);
+    
+    display: flex;
+    flex-direction: column;
+    
+    align-items:center;
+    width: 50rem;
+    height: 35rem;
+    -webkit-box-shadow: 7px 24px 43px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 7px 24px 43px 0px rgba(0, 0, 0, 1);
+    box-shadow: 7px 24px 43px 0px rgba(0, 0, 0, 1);
+    margin-bottom: 5rem;
+}
+
+
+
+aside>img{
+    border-radius: 50%;
+    width: 15rem;
+    height: 15rem;
+    margin: 3rem;
+}
+
+
+.date{
+    margin-bottom: 3rem;
+}
+.date>form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.date>form>*{
+    margin-top: 1rem;
+}
+.date>form>label>input{
+    width: 14rem;
+}
+.buttons{
+    display: flex;
+    
+}
+.buttons>*{
+    width: 40%;
+    height: 3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+.DeleteAcc{
+    background-color: rgb(255, 255, 255);
+    display: block;
+    border:1px solid black;
+    color: rgb(0, 0, 0);
+}
+.DeleteAcc:hover{
+        background-color: rgb(255, 255, 255);
+    color: red;
+    border:1px solid red;
+    
+}
+
+
+.LogOut{
+    background-color: black;
+    color: white;
+
+}
+.LogOut:hover{
+    background-color: rgb(255, 255, 255);
+    color:rgb(0, 200,0);
+    border: 1px solid rgb(0, 200, 0);
+}
+
+      footer{
+
+     
+        position:absolute;
+        bottom: 0%;
+   }
+   
+@media (max-width:1200px) {
+    footer{
+        position:relative;
+        
+    }
+}
+
+@media (max-width:800px){
+    .date>form{
+        display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+    }
+    .date>form>*{
+        margin-top: 1rem;
+    }
+    .card{
+        height: fit-content;
+    }
+    .buttons{
+        margin-bottom: 3rem;
+    }
+    footer{
+        position: relative;
+    }
+}   
+
+@media (min-height:1050px){
+
+    footer{
+        position: absolute;
+        bottom: 0%;
+    }
+}   
+
+
